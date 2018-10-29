@@ -64,7 +64,6 @@ class NewVisitorTest(LiveServerTestCase):
         # 伊迪丝想知道这个网站是否会记住她的清单
         # 她看到网站为她生成了一个唯一的URL
         # 页面中有一些文字解说这个功能
-        self.fail('Finish the test!')
         # 她访问那个URL，发现待办事项清单还在
 
         # 她很满意，去睡觉了
@@ -109,5 +108,4 @@ class NewVisitorTest(LiveServerTestCase):
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy peacock feathers', page_text)
         self.assertIn('Buy milk', page_text)
-
         # 两人都很满意，然后去睡觉了
